@@ -128,7 +128,7 @@ Webブラウザを使ったアクセス
     # getenforce
     Enforcing
 
-もし'Enforcing'であれば、次のコマンドで無効化できます。
+もし'Enforcing'であれば、次のコマンドでSELinuxポリシールールの強制を解除できます。
 
     # setenforce 0
     # getenforce
