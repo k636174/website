@@ -21,12 +21,20 @@
 			<h2>更新情報・お知らせ</h2>
 			<table class="table">
 				<tr>
+					<td>2014/07/14</td>
+					<td><a href="http://www.ospn.jp/osc2014-kyoto/">2014/8/1-2 OSC@京都</a>に出展・セミナーをします。</td>
+				</tr>
+				<tr>
+					<td>2014/06/30</td>
+					<td>Hatohol version 14.06が本日リリースされました。</td>
+				</tr>
+				<tr>
 					<td>2014/06/20</td>
-					<td><a href="http://www.ospn.jp/osc2014-nagoya/">2014/7/4-5 OSC@名古屋</a>に出展・セミナーをします</td>
+					<td><a href="http://www.ospn.jp/osc2014-nagoya/">2014/7/4-5 OSC@名古屋</a>に出展・セミナーをします。</td>
 				</tr>
 				<tr>
 					<td>2014/06/04</td>
-					<td><a href="http://www.oss-kanri.org/20140604_vol05/">2014/6/4 第5回OSS運用管理勉強会</a>に参加しました</td>
+					<td><a href="http://www.oss-kanri.org/20140604_vol05/">2014/6/4 第5回OSS運用管理勉強会</a>に参加しました。</td>
 				</tr>
 				<tr>
 					<td>2014/04/02</td>
