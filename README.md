@@ -1,13 +1,13 @@
 Hatohol Web Site
 =================
-This repository includes source code of [Hatohol web site](http://www.hatohol.org)
+This repository includes the source code of [Hatohol web site](http://www.hatohol.org)
 
 Dependency
 -----------
-You have to compile files to generate HTML files.
-gen.py compile files automatically.
+You have to compile the files to generate the HTML files.
+gen.py will compile files automatically.
 
-It requires following libraries:
+It requires the following libraries:
 
 - Python 3
 - python-markdown
@@ -21,11 +21,11 @@ It requires following libraries:
 
 How to compile
 ---------------
-gen.py automatically generates output files including HTML, CSS, images, and so on.
+The “gen.py” script automatically generates the output for the files including HTML, CSS, images, and so on.
 
     ./gen.py --output /path/to/output/directory
 
-Stop all LibreOffice instance to avoid conversion error by unoconv.
+Stop all LibreOffice instances to avoid conversion error by unoconv.
 
 How to deploy
 --------------
@@ -79,9 +79,9 @@ Source code
 
 Each [filename].tpl and [filename].md files are converted to [filename]/index.html
 
-In this repository, there are some kinds of files to be compiled.
-- .tpl: HTML template files. .tpl files under content directory only have body content. They are merged with layout/header.tpl and layout/footer.tpl. Content of first h1 tag is assigned to page title.
+In this repository, there are different kinds of files to be compiled.
+- .tpl: HTML template files. The .tpl files under content directory only contain the body. They are merged with layout/header.tpl and layout/footer.tpl. The content of the first h1 tag is assigned to the page title.
 - .md: Markdown files. They are compiled by [python-markdown](https://pypi.python.org/pypi/Markdown), then merged with layout/header.tpl and layout/footer.tpl.
-- .scss: Sass files. They are compiled to CSS files by sass command.
+- .scss: Sass files. They are compiled to CSS files by the sass command.
 - .odg: OpenDocument Graphics files. They are converted to PNG by unoconv.
 
