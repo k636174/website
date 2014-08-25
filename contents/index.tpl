@@ -21,6 +21,10 @@
 			<h2>更新情報・お知らせ</h2>
 			<table class="table">
 				<tr>
+					<td>2014/08/25</td>
+					<td><a href="http://www.ospn.jp/osc2014-fall/">2014/10/18-19 OSC@東京</a>に出展・セミナーをします。</td>
+				</tr>
+				<tr>
 					<td>2014/07/14</td>
 					<td><a href="http://www.ospn.jp/osc2014-kyoto/">2014/8/1-2 OSC@京都</a>に出展・セミナーをします。</td>
 				</tr>
