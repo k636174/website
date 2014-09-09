@@ -55,7 +55,7 @@
 					<li><a href="/docs/">ドキュメント</a></li>
 					<li><a href="/contrib/">プロジェクトへの協力</a></li>
 					<!--<li><a href="/commercial/">商用サービス</a></li>-->
-					<li><a href="https://sourceforge.jp/projects/hatohol/forums/" target="_blank">フォーラム</a></li>
+					<!--<li><a href="https://sourceforge.jp/projects/hatohol/forums/" target="_blank">フォーラム</a></li>-->
 				</ul>
 			</div>
 		</div>
