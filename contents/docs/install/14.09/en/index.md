@@ -3,7 +3,6 @@ How to install Hatohol on CentOS 6.5 (x86_64) with yum repository
 
 Installation of needed packages
 -------------------------------
-
 ### Register the yum repository of Project hatohol.
 Use the following command to save the repo file to /etc/yum.repos.d/ directory.
 
@@ -25,7 +24,6 @@ Use the following command to install Hatohol Client.
     # yum install hatohol-client
 
 ### Dependent packages
-
 Following packages are installed by above commands.
 
 - Provided packages from repository of CentOS 
@@ -48,9 +46,7 @@ Following packages are installed by above commands.
 
 Setup
 -----
-
 ### Setup of MySQL server
-
 If you have already used MySQL server and use it, you can omit following steps.  
 Start MySQL server and start it when the machine is started.
 
@@ -58,7 +54,6 @@ Start MySQL server and start it when the machine is started.
     # service mysqld start
 
 ### Initialization of Hatohol DB
-
 Use following command to initialize Hatohol DB
 
     $ hatohol-db-initiator hatohol <User name of MySQL root user> <User password of MySQL root user>
@@ -74,7 +69,6 @@ Tips:
   - Then, You need to fix the /etc/hatohol/hatohol.conf
 
 ### Setup of Hatohol Client
-
 - Prepare a DB for Hatohol Client
 
 Use following commands in MySQL to create database and user.
@@ -103,7 +97,6 @@ When Hatohol server successfully starts, init script shows following messages.
 
 Access with a web browser
 ------------------------
-
 ### Check of the setting of iptables and SELinux
 By default, some security mechanisms such as SELinux and iptables block the access from other computers.
 You have to deactivate them if needed.
