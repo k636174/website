@@ -1,5 +1,5 @@
-How to install Hatohol on CentOS 6.5 (x86_64) with RPM files
-============================================================
+How to install Hatohol on CentOS 6.5 (x86_64) with yum repository
+=================================================================
 
 Installation of needed packages
 -------------------------------
