@@ -71,7 +71,7 @@ If you meat the following error, there is a way to solve it.
 Tips:  
 - If the root password of the MySQL server is not set, use \"\".
 - You can change user name and password of the created DB by --hatohol-db-user and --hatohol-db-password options.
-  - Then, You need to fix the hatohol.conf
+  - Then, You need to fix the /etc/hatohol/hatohol.conf
 
 ### Setup of Hatohol Client
 
