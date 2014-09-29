@@ -31,8 +31,3 @@
 - Hatoholで社内もクラウドも一元監視 - [hbstudy#49](http://heartbeats.jp/hbstudy/2013/08/hbstudy49.html) 2013/08/30
 	- [概要・機能紹介](http://www.slideshare.net/koedoyoshida/hatohol-introduction20130830hbstudy-25744631)
 	- [Technical Brief](http://www.slideshare.net/koedoyoshida/hatohol-technicalbrief20130830hbstudy)
-
-開発者向けドキュメント
--------------------
-- [Hatohol Server APIドキュメント](/docs/api/)
-
