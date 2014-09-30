@@ -14,17 +14,17 @@
 <h2>RPMを一つ一つインストール</h2>
 
 <p>
-	yumリポジトリーを用いずに、yum localinstallを用いてダウンロード・インストールを行うことも可能です。<br>
+	yumリポジトリーを用いずに、yum installを用いてダウンロード・インストールを行うことも可能です。<br>
 	yumリポジトリーを用いる方法と同様、原則としてCentOS (またはRedHat及びそのクローン) のバージョン6専用です。
 </p>
 
-<pre><kbd class="shell"><span class="shellline">yum localinstall https://github.com/project-hatohol/json-glib-for-distribution/raw/master/RPMS/x86_64/json-glib-0.12.6-1PH.x86_64.rpm</span>
-<span class="shellline">yum localinstall https://github.com/project-hatohol/Django-for-distribution/raw/master/dist/Django-1.5.3-1.noarch.rpm</span>
+<pre><kbd class="shell"><span class="shellline">yum install https://github.com/project-hatohol/json-glib-for-distribution/raw/master/RPMS/x86_64/json-glib-0.12.6-1PH.x86_64.rpm</span>
+<span class="shellline">yum install https://github.com/project-hatohol/Django-for-distribution/raw/master/dist/Django-1.5.3-1.noarch.rpm</span>
 
-<span class="shelline">yum localinstall https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-lib-common-14.06-4.el6.x86_64.rpm</span>
-<span class="shelline">yum localinstall https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-lib-arm-plugin-14.06-4.el6.x86_64.rpm</span>
-<span class="shelline">yum localinstall https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-14.06-4.el6.x86_64.rpm</span>
-<span class="shelline">yum localinstall https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-client-14.06-4.el6.x86_64.rpm</span></pre>
+<span class="shelline">yum install https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-lib-common-14.06-4.el6.x86_64.rpm</span>
+<span class="shelline">yum install https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-lib-arm-plugin-14.06-4.el6.x86_64.rpm</span>
+<span class="shelline">yum install https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-14.06-4.el6.x86_64.rpm</span>
+<span class="shelline">yum install https://github.com/project-hatohol/hatohol-packages/raw/master/RPMS/14.06/hatohol-client-14.06-4.el6.x86_64.rpm</span></pre>
 
 <h2>RPMをダウンロード</h2>
 <p>Hatohol及び、Project Hatoholが提供する依存パッケージのRPMは以下からダウンロードすることができます。</p>
