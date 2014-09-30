@@ -2,7 +2,7 @@
 ==========
 
 - [インストール](/docs/install/14.09/ja/) ([English](/docs/install/14.09/en/))
-- [アップグレード (14.03 → 14.06)](/docs/upgrade/14.09/ja/) ([English](/docs/upgrade/14.09/en/))
+- [アップグレード (14.06 → 14.09)](/docs/upgrade/14.09/ja/) ([English](/docs/upgrade/14.09/en/))
 
 旧バージョンのドキュメント
 
@@ -17,7 +17,7 @@
 	- [アップグレード](/docs/upgrade/14.03/ja/)
 - 14.06
 	- [インストール](/docs/install/14.06/ja/)
-	- [アップグレード (14.03 → 14.06)](/docs/upgrade/14.06/ja/)
+	- [アップグレード](/docs/upgrade/14.06/ja/)
 
 
 外部のドキュメント等
