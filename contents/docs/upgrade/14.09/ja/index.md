@@ -18,7 +18,7 @@ Hatoholのアップデート方法
 ### Hatohol DBの設定
 以下のコマンドでHatohol DBの設定をして下さい。
 
-    $ hatohol-db-initiator hatohol <User name of MySQL root user> <Password of MySQL root user>
+    $ hatohol-db-initiator hatohol <MySQLのrootユーザ名> <MySQLのrootパスワード>
 
 ### Hatohol Serverの開始
 以下のコマンドでHatoholを開始して下さい。
@@ -41,7 +41,7 @@ HatoholのDBを初期化するためのhatohol-config-db-creatorコマンドを�
 
 使用方法:
 
-    $ hatohol-db-initiator hatohol <User name of MySQL root user> <Password of MySQL root user>
+    $ hatohol-db-initiator hatohol <MySQLのrootユーザ名> <MySQLのrootパスワード>
 
 情報:  
 もし、以下のエラーが発生した場合、
