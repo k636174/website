@@ -60,6 +60,8 @@ CentOS 6.5 (x86_64)でのRPMを用いたインストール方法
 情報:  
 もし、以下のエラーが発生した場合、以下のコマンドを実行して必要なパッケージをインストールしてください。
 
+    ImportError: No module named argparse
+
     # yum install python-argparse
 
 TIPS:
