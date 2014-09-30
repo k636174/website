@@ -15,6 +15,11 @@ Hatoholのアップデート方法
 
     # yum upgrade hatohol hatohol-client
 
+### Hatohol DBの設定
+以下のコマンドでHatohol DBの設定をして下さい。
+
+    $ hatohol-db-initiator hatohol <User name of MySQL root user> <Password of MySQL root user>
+
 ### Hatohol Serverの開始
 以下のコマンドでHatoholを開始して下さい。
 

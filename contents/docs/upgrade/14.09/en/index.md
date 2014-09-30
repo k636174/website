@@ -16,6 +16,11 @@ Use the following command to upgrade Hatohol.
 
     # yum upgrade hatohol hatohol-client
 
+### Setting of Hatohol DB
+Use the following command to set up Hatohol DB.
+
+    $ hatohol-db-initiator hatohol <User name of MySQL root user> <Password of MySQL root user>
+
 ### Start of Hatohol Server
 Use the following command to start Hatohol.
 
