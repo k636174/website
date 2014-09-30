@@ -58,10 +58,11 @@ CentOS 6.5 (x86_64)でのRPMを用いたインストール方法
     $ hatohol-db-initiator hatohol <MySQLのrootユーザ名> <MySQLのrootパスワード>
 
 情報:  
-もし、以下のエラーが発生した場合、以下のコマンドを実行して必要なパッケージをインストールしてください。
+もし、以下のエラーが発生した場合、
 
     ImportError: No module named argparse
 
+以下のコマンドを実行して必要なパッケージをインストールしてください。
 
     # yum install python-argparse
 
