@@ -11,7 +11,7 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
 ### EPELレポジトリの登録
 以下のコマンドを実行し、EPELレポジトリの登録をしてください。
 
-    # wget -P /etc/yum.repos.d/http://project-hatohol.github.io/repo/hatohol.repo
+    # rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 ### Hatohol Serverのインストール
 次のコマンドでインストールしてください。
