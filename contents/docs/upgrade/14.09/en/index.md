@@ -60,7 +60,9 @@ Use following command to install require package.
 
     # yum install python-argparse
 
-Tips:  
+Tips:
+
 - If the root password of the MySQL server is not set, use "".
 - You can change user name and password of the created DB by --hatohol-db-user and --hatohol-db-password options.
-  - Then, You need to fix the /etc/hatohol/hatohol.conf
+    - Then, You need to fix the /etc/hatohol/hatohol.conf
+

@@ -27,22 +27,22 @@ CentOS 6.5 (x86_64)でのRPMを用いたインストール方法
 上記のコマンドでインストールされるパッケージは以下のとおりです。
 
 - CentOSのレポジトリから提供されるパッケージ
-  - glib2
-  - libsoup
-  - sqlite
-  - mysql
-  - mysql-server
-  - libuuid
-  - qpid-cpp-server
-  - qpid-cpp-client
-  - MySQL-python
-  - httpd
-  - mod_wsgi
+    - glib2
+    - libsoup
+    - sqlite
+    - mysql
+    - mysql-server
+    - libuuid
+    - qpid-cpp-server
+    - qpid-cpp-client
+    - MySQL-python
+    - httpd
+    - mod_wsgi
 - EPELのレポジトリから提供されるパッケージ
-  - librabbitmq
+    - librabbitmq
 - Project Hatoholのレポジトリから提供されるパッケージ
-  - json-glib
-  - Django
+    - json-glib
+    - Django
 
 セットアップ
 ------------
@@ -67,9 +67,10 @@ CentOS 6.5 (x86_64)でのRPMを用いたインストール方法
     # yum install python-argparse
 
 TIPS:
+
 - もしMySQLのrootパスワードが指定されていない場合、""を利用してください。
 - 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
-  - その時は/etc/hatohol/hatohol.confファイルを修正してください。
+    - その時は/etc/hatohol/hatohol.confファイルを修正してください。
 
 ### Hatohol Clientのセットアップ
 - Hatohol Client用DBを用意する

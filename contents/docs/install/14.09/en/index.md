@@ -27,22 +27,22 @@ Use the following command to install Hatohol Client.
 Following packages are installed by above commands.
 
 - Provided packages from repository of CentOS 
-  - glib2
-  - libsoup
-  - sqlite
-  - mysql
-  - mysql-server
-  - libuuid
-  - qpid-cpp-server
-  - qpid-cpp-client
-  - MySQL-python
-  - httpd
-  - mod_wsgi
+    - glib2
+    - libsoup
+    - sqlite
+    - mysql
+    - mysql-server
+    - libuuid
+    - qpid-cpp-server
+    - qpid-cpp-client
+    - MySQL-python
+    - httpd
+    - mod_wsgi
 - Provided package from repository of EPEL
-  - librabbitmq
+    - librabbitmq
 - Provided packages from repository of Project Hatohol
-  - json-glib
-  - Django
+    - json-glib
+    - Django
 
 Setup
 -----
@@ -67,10 +67,11 @@ Use following command to install require package.
 
     # yum install python-argparse
 
-Tips:  
+Tips:
+
 - If the root password of the MySQL server is not set, use "".
 - You can change user name and password of the created DB by --hatohol-db-user and --hatohol-db-password options.
-  - Then, You need to fix the /etc/hatohol/hatohol.conf
+    - Then, You need to fix the /etc/hatohol/hatohol.conf
 
 ### Setup of Hatohol Client
 - Prepare a DB for Hatohol Client
