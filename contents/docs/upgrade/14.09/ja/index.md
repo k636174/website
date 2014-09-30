@@ -19,7 +19,7 @@ Hatoholのアップデート方法
 以下のコマンド
 
     # service hatohol start
-    # service httpd start
+    # service httpd restart
 
 Hatohol serverが正常に開始した場合、以下のようなメッセージが表示されます。
 

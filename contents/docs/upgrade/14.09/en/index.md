@@ -10,7 +10,6 @@ Stop the Hatohol Server to upgrade.
 Use the following commands to hatohol Server.
 
     # service hatohol stop
-    # service httpd stop
 
 ### Upgrade the Hatohol
 Use the following command to upgrade Hatohol.
@@ -21,7 +20,7 @@ Use the following command to upgrade Hatohol.
 Use the following command to start Hatohol.
 
     # service hatohol start
-    # service httpd start
+    # service httpd restart
 
 When Hatohol server successfully starts, init script shows following messages.
 
