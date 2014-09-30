@@ -26,17 +26,6 @@ Hatohol serverが正常に開始した場合、以下のようなメッセージ
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
     [INFO] <main.cc:171> started hatohol server: ver. 14.09
 
-### Hatohol情報の閲覧
-例えば、Hatohol clientが192.168.1.1で動作している場合、
-ブラウザを用いて次のURLを開いてください。
-
-- http://192.168.1.1/
-
-【メモ】  
-現在、上記ページは、Google ChromeおよびFirefoxを使ってチェックされています。
-Internet Explorerを使用する場合は、ご使用のバージョンによっては、
-表示レイアウトが崩れる場合があります。（IE11では正常に表示されることを確認しています）
-
 注意
 ---
 ### hatohol-config-db-creatorコマンドは廃止されました

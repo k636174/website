@@ -28,16 +28,6 @@ When Hatohol server successfully starts, init script shows following messages.
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
     [INFO] <main.cc:171> started hatohol server: ver. 14.09
 
-### View of Hatohol information
-For example, if the Hatohol client runs on computer: 192.168.1.1,
-Open the following URL from your Browser.
-
-- http://192.168.1.1/viewer/
-
-> ** Note **
-> Currently the above pages have been checked with Google Chrome and Firefox.
-> When using Internet Explorer, display layouts may collapse depending on the version of use.
-
 NOTE
 ----
 
