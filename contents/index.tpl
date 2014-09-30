@@ -22,7 +22,7 @@
 			<table class="table">
 				<tr>
 					<td>2014/09/30</td>
-					<td>Hatohol version 14.09が本日リリースされました。</td>
+					<td>Hatohol version 14.09が本日リリースされました。<a href="/docs/install/14.09/ja/">(インストールドキュメント)</a></td>
 				</tr>
 				<tr>
 					<td>2014/08/25</td>
