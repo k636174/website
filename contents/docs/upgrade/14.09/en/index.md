@@ -13,13 +13,11 @@ Use the following commands to hatohol Server.
     # service httpd stop
 
 ### Upgrade the Hatohol
-
 Use the following command to upgrade Hatohol.
 
     # yum upgrade hatohol hatohol-client
 
 ### Start of Hatohol Server
-
 Use the following command to start Hatohol.
 
     # service hatohol start
@@ -34,7 +32,6 @@ NOTE
 ----
 
 ### hatohol-config-db-creator command was removed
-
 We remove the hatohol-config-db-creator command to initialize DB of Hatohol.  
 But, we add the hatohol-db-initiator command to initialize DB instead of it.  
 And, you can not add monitoring server information and incident management server information by hatohol-db-initiator.
