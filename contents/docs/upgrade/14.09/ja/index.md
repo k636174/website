@@ -16,7 +16,7 @@ Hatoholのアップデート方法
     # yum upgrade hatohol hatohol-client
 
 ### Hatohol Serverの開始
-以下のコマンド
+以下のコマンドでHatoholを開始して下さい。
 
     # service hatohol start
     # service httpd restart
