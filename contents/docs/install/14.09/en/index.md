@@ -64,7 +64,7 @@ If you meat the following error, there is a way to solve it.
     # yum install python-argparse
 
 Tips:  
-- If the root password of the MySQL server is not set, use \"\".
+- If the root password of the MySQL server is not set, use "".
 - You can change user name and password of the created DB by --hatohol-db-user and --hatohol-db-password options.
   - Then, You need to fix the /etc/hatohol/hatohol.conf
 

@@ -63,7 +63,7 @@ CentOS 6.5 (x86_64)でのRPMを用いたインストール方法
     # yum install python-argparse
 
 TIPS:
-- もしMySQLのrootパスワードが指定されていない場合、\"\"を利用してください。
+- もしMySQLのrootパスワードが指定されていない場合、""を利用してください。
 - 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
   - その時は/etc/hatohol/hatohol.confファイルを修正してください。
 
