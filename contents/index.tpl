@@ -21,6 +21,10 @@
 			<h2>更新情報・お知らせ</h2>
 			<table class="table">
 				<tr>
+					<td>2014/09/30</td>
+					<td>Hatohol version 14.09が本日リリースされました。</td>
+				</tr>
+				<tr>
 					<td>2014/08/25</td>
 					<td><a href="http://www.ospn.jp/osc2014-fall/">2014/10/18-19 OSC@東京</a>に出展・セミナーをします。</td>
 				</tr>
