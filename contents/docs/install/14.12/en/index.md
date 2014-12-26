@@ -70,15 +70,6 @@ Use following command to initialize Hatohol DB
 
     $ hatohol-db-initiator hatohol <User name of MySQL root user> <User password of MySQL root user>
 
-NOTE:  
-If you meat the following error,
-
-    ImportError: No module named argparse
-
-Use following command to install require package.
-
-    # yum install python-argparse
-
 Tips:
 
 - If the root password of the MySQL server is not set, use "".
