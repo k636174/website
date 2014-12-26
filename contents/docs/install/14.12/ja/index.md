@@ -149,6 +149,11 @@ iptablesについては、/etc/sysconfig/iptablesの編集により許可ポー�
 hatohol-config.datで指定したユーザとパスワードでログインすることで、
 各種画面の閲覧が可能になります。
 
+Hatohol Arm Plugin Interfaceを使用する場合
+-----------------------------------------
+あなたがHatohol Arm Plugin Interface(HAPI)を使用する場合、
+'/etc/qpidd.conf'のauth=yesをauth=noに修正してください。
+
 【メモ】  
 現在、上記ページは、Google ChromeおよびFirefoxを使ってチェックされています。
 Internet Explorerを使用する場合は、ご使用のバージョンによっては、
