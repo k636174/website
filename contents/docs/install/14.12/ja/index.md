@@ -18,12 +18,12 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
 
     # yum install hatohol-server
 
-### Hatohol Clientのインストール
+### Hatohol Web Flontendのインストール
 次のコマンドでインストールしてください。
 
     # yum install hatohol-web
 
-### 関連パッケージ
+### 依存パッケージ
 上記のコマンドでインストールされるパッケージは以下のとおりです。
 
 - CentOSのレポジトリから提供されるパッケージ
@@ -31,13 +31,12 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
     - libsoup
     - sqlite
     - mysql
-    - mysql-server
     - libuuid
-    - qpid-cpp-server
     - qpid-cpp-client
     - MySQL-python
     - httpd
     - mod_wsgi
+    - python-argparse
 - EPELのレポジトリから提供されるパッケージ
     - librabbitmq
 - Project Hatoholのレポジトリから提供されるパッケージ
@@ -52,6 +51,7 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
     - qpid-cpp-server
 
 次のコマンドでインストールしてください。
+
     # yum install mysql-server qpid-cpp-server
 
 セットアップ
@@ -73,8 +73,8 @@ TIPS:
 - 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
     - その時は/etc/hatohol/hatohol.confファイルを修正してください。
 
-### Hatohol Clientのセットアップ
-- Hatohol Client用DBを用意する
+### Hatohol Webのセットアップ
+- Hatohol Web用DBを用意する
 
 以下のMySQLクエリを実行してデータベースとユーザを作成してください。
 
@@ -96,7 +96,7 @@ Hatohol Serverが正常に開始した場合、起動スクリプトが以下の
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
     [INFO] <main.cc:171> started hatohol server: ver. 14.09
 
-### Hatohol Clientの開始
+### Hatohol Webの開始
 
     # service httpd start
 
@@ -149,12 +149,18 @@ iptablesについては、/etc/sysconfig/iptablesの編集により許可ポー�
 hatohol-config.datで指定したユーザとパスワードでログインすることで、
 各種画面の閲覧が可能になります。
 
-Hatohol Arm Plugin Interfaceを使用する場合
------------------------------------------
-あなたがHatohol Arm Plugin Interface(HAPI)を使用する場合、
-'/etc/qpidd.conf'のauth=yesをauth=noに修正してください。
-
 【メモ】  
 現在、上記ページは、Google ChromeおよびFirefoxを使ってチェックされています。
 Internet Explorerを使用する場合は、ご使用のバージョンによっては、
 表示レイアウトが崩れる場合があります。（IE11では正常に表示されることを確認しています）
+
+Hatohol Arm Plugin Interfaceを使用する場合
+-----------------------------------------
+あなたがHatohol Arm Plugin Interface(HAPI)を使用する場合、'/etc/qpidd.conf'を以下のように修正してください。
+
+    -auth=yes
+    +auth=no
+
+【メモ】
+先頭の'+'印は、新たに追加する行を意味します。
+先頭の'-'印は、削除する行を意味します。
