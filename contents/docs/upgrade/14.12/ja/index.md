@@ -29,7 +29,12 @@ Hatoholのアップデート方法
 
     # yum install hatohol-server hatohol-web
 
-### Hatohol Web DBの設定
+### Hatohol DBの更新
+14.09からアップデートする場合、以下のコマンドで監視サーバタイプの定義を更新してください。
+
+   $ hatohol-db-initiator -f -t server_types hatohol <MySQLのユーザ名> <MySQLのパスワード>
+
+### Hatohol Web DBの更新
 以下のコマンドでHatohol Web DBの再設定を行って下さい。
 
     # /usr/libexec/hatohol/client/manage.py syncdb
