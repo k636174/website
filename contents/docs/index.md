@@ -1,8 +1,8 @@
 ドキュメント
 ==========
 
-- [インストール](/docs/install/14.09/ja/) ([English](/docs/install/14.09/en/))
-- [アップグレード (14.06 → 14.09)](/docs/upgrade/14.09/ja/) ([English](/docs/upgrade/14.09/en/))
+- [インストール](/docs/install/14.12/ja/) ([English](/docs/install/14.12/en/))
+- [アップグレード (14.09 → 14.12)](/docs/upgrade/14.12/ja/) ([English](/docs/upgrade/14.12/en/))
 
 旧バージョンのドキュメント
 
@@ -18,6 +18,9 @@
 - 14.06
 	- [インストール](/docs/install/14.06/ja/)
 	- [アップグレード](/docs/upgrade/14.06/ja/)
+- 14.09
+	- [インストール](/docs/install/14.09/ja/)
+	- [アップグレード](/docs/upgrade/14.09/ja/)
 
 
 外部のドキュメント等
