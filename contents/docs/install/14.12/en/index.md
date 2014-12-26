@@ -147,6 +147,11 @@ Open the following URL from your Browser.
 
 - http://192.168.1.1/
 
+Use Hatohol Arm Plugin Interface
+-------------------------------
+In case of you use HAPI(Hatohol Arm Plugin Interface),
+you fix auth=yes to auth=no of in '/etc/qpidd.conf'.
+
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
