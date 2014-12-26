@@ -11,22 +11,28 @@ Hatoholのアップデート方法
     # service hatohol stop
 
 ### アップデート方法
-今回のアップデートでパッケージ名が変更されたため、従来のyum upgradeコマンドによる
-アップデートは行えません。
+今回のアップデートでパッケージ名が変更されたため、従来のyum upgradeコマンドによるアップデートは行えません。
+
+以下のようにそれぞれパッケージ名が変更されました。
+
+    hatohol -> hatohol-server
+    hatohol-client -> hatohol-web
+    hatohol-arm-plugin-zabbix -> hatohol-arm-zabbix
+    hatohol-lib-arm-plugin -> hatohol-lib-arm
+
 一度Hatohol-14.09をアンインストールした後に、Hatohol-14.12をインストールします。
 以下のコマンドを用いてHatohol-14.09をアンインストールしてください。
 
     # yum remove hatohol hatohol-client hatohol-lib-common
 
 アンインストールが完了した後に、以下のコマンドを用いてHatohol-14.12をインストールしてください。
-hatohol-serverが従来のhatohol、hatohol-webがhatohol-clientにそれぞれ相当します。
 
     # yum install hatohol-server hatohol-web
 
-### Hatohol DBの設定
-以下のコマンドでHatohol DBの設定をして下さい。
+### Hatohol Web DBの設定
+以下のコマンドでHatohol Web DBの再設定を行って下さい。
 
-    $ hatohol-db-initiator hatohol <MySQLのrootユーザ名> <MySQLのrootパスワード>
+    # /usr/libexec/hatohol/client/manage.py syncdb
 
 ### Hatohol Serverの開始
 以下のコマンドでHatoholを開始して下さい。
@@ -37,7 +43,7 @@ hatohol-serverが従来のhatohol、hatohol-webがhatohol-clientにそれぞれ�
 Hatohol serverが正常に開始した場合、以下のようなメッセージが表示されます。
 
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
-    [INFO] <main.cc:171> started hatohol server: ver. 14.09
+    [INFO] <main.cc:171> started hatohol server: ver. 14.12
 
 注意
 ---
