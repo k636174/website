@@ -24,16 +24,14 @@ Use the following command to install Hatohol Web.
     # yum install hatohol-web
 
 ### Dependent packages
-Following packages are installed by above commands.
+The following packages are installed by the above commands.
 
 - Provided packages from repository of CentOS 
     - glib2
     - libsoup
     - sqlite
     - mysql
-    - mysql-server
     - libuuid
-    - qpid-cpp-server
     - qpid-cpp-client
     - MySQL-python
     - httpd
@@ -45,8 +43,8 @@ Following packages are installed by above commands.
     - json-glib
     - Django
 
-### Require packages
-Following packages are needed for correct behavior of Hatohol.
+### Required packages
+The following packages are required for Hatohol.
 
 - Provided packages from repository of CentOS 
     - mysql-server
@@ -99,7 +97,7 @@ When Hatohol server successfully starts, init script shows following messages.
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
     [INFO] <main.cc:171> started hatohol server: ver. 14.09
 
-### Start of Hatohol Client
+### Start of Hatohol Web
 
     # service httpd start
 
@@ -147,11 +145,15 @@ Open the following URL from your Browser.
 
 - http://192.168.1.1/
 
-Use Hatohol Arm Plugin Interface
--------------------------------
-In case of you use HAPI(Hatohol Arm Plugin Interface),
-you fix auth=yes to auth=no of in '/etc/qpidd.conf'.
-
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
+
+Use Hatohol Arm Plugin Interface
+-------------------------------
+When using HAPI(Hatohol Arm Plugin Interface), you fix '/etc/qpidd.conf' as the following.
+
+    -auth=yes
+    +auth=no
+
+> ** NOTE ** The mark '+' at the head means a newly added line and the mark '-' at the head means a removed line.
