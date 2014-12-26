@@ -1,4 +1,4 @@
-How to upgrade Hatohol on CentOS 6.5 (x86_64) from version 14.06 to version 14.09 with yum repository
+How to upgrade Hatohol on CentOS 6.5 (x86_64) from version 14.09 to version 14.12 with yum repository
 =====================================================================================================
 
 How to upgrade Hatohol
@@ -12,14 +12,27 @@ Use the following commands to hatohol Server.
     # service hatohol stop
 
 ### Upgrade the Hatohol
-Use the following command to upgrade Hatohol.
+You can not heretofore update by yum upgrade, because we changed packages name since this update.
+Each packages name are changed as the following.
 
-    # yum upgrade hatohol hatohol-client
+    hatohol -> hatohol-server
+    hatohol-client -> hatohol-web
+    hatohol-arm-plugin-zabbix -> hatohol-arm-zabbix
+    hatohol-lib-arm-plugin -> hatohol-lib-arm
 
-### Setting of Hatohol DB
-Use the following command to set up Hatohol DB.
+Install Hatohol-14.12 after uninstall Hatohol-14.09.
+Use the following command to uninstall Hatohol-14.09.
 
-    $ hatohol-db-initiator hatohol <User name of MySQL root user> <Password of MySQL root user>
+    # yum remove hatohol hatohol-client hatohol-lib-common
+
+Use the following command to install Hatohol-14.12 after finish uninstall.
+
+    # yum install hatohol-server hatohol-web
+
+### Setting of Hatohol Web DB
+Use the following command to reset up Hatohol Web DB.
+
+    # /usr/libexec/hatohol/client/manage.py syncdb
 
 ### Start of Hatohol Server
 Use the following command to start Hatohol.
@@ -30,7 +43,7 @@ Use the following command to start Hatohol.
 When Hatohol server successfully starts, init script shows following messages.
 
     Starting hatohol: [INFO] <ConfigManager.cc:429> Use configuration file: /etc/hatohol/hatohol.conf
-    [INFO] <main.cc:171> started hatohol server: ver. 14.09
+    [INFO] <main.cc:171> started hatohol server: ver. 14.12
 
 NOTE
 ----
