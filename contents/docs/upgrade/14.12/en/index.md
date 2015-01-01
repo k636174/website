@@ -29,7 +29,12 @@ Use the following command to install Hatohol-14.12 after finish uninstall.
 
     # yum install hatohol-server hatohol-web
 
-### Setting of Hatohol Web DB
+### Upgrade Hatohol DB
+If you upgrade it from 14.09, please update the monitoring server type definitions by the following command:
+
+   $ hatohol-db-initiator -f -t server_types hatohol <User name of MySQL user> <User password of MySQL user>
+
+### Upgrade Hatohol Web DB
 Use the following command to reset up Hatohol Web DB.
 
     # /usr/libexec/hatohol/client/manage.py syncdb
