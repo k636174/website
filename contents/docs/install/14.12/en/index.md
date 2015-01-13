@@ -18,7 +18,7 @@ Use the following command to install Hatohol Server.
 
     # yum install hatohol-server
 
-### Install Hatohol Web Flontend
+### Install Hatohol Web Frontend
 Use the following command to install Hatohol Web.
 
     # yum install hatohol-web
