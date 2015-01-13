@@ -18,7 +18,7 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
 
     # yum install hatohol-server
 
-### Hatohol Web Flontendのインストール
+### Hatohol Web Frontendのインストール
 次のコマンドでインストールしてください。
 
     # yum install hatohol-web
