@@ -146,7 +146,7 @@ iptablesについては、/etc/sysconfig/iptablesの編集により許可ポー�
 
 - http://192.168.1.1/
 
-hatohol-config.datで指定したユーザとパスワードでログインすることで、
+デフォルトのユーザ名： admin パスワード： hatohol でログインすることで、
 各種画面の閲覧が可能になります。
 
 【メモ】  
