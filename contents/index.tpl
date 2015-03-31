@@ -4,9 +4,11 @@
 	<div class="col-md-8">
 		<img class="screenshot" alt="ダッシュボード スクリーンショット" src="/assets/images/screenshots/dashboard.png">
 	</div>
+	<!--
 	<div class="col-md-4">
 		<a href="/download/" class="download download-top">ダウンロード</a>
 	</div>
+	-->
 </div>
 
 <div class="row">
