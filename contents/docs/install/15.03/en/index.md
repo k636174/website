@@ -23,10 +23,10 @@ Use the following command to install Hatohol Web.
 
     # yum install hatohol-web
 
-### Dependent packages
+### Building dependent packages
 The following packages are installed by the above commands.
 
-- Provided packages from repository of CentOS 
+- Packages provided from repository of CentOS
     - glib2
     - libsoup
     - sqlite
@@ -37,16 +37,16 @@ The following packages are installed by the above commands.
     - httpd
     - mod_wsgi
     - python-argparse
-- Provided package from repository of EPEL
+- Package provided from repository of EPEL
     - librabbitmq
-- Provided packages from repository of Project Hatohol
+- Packages provided from repository of Project Hatohol
     - json-glib
     - Django
 
-### Required packages
+### Runtime dependent packages
 The following packages are required for Hatohol.
 
-- Provided packages from repository of CentOS 
+- Packages provided from repository of CentOS
     - mysql-server
     - qpid-cpp-server
 
@@ -57,29 +57,47 @@ Use the following command to install MySQL and Apache Qpid servers.
 Setup
 -----
 ### Setup of MySQL server
-If you have already used MySQL server and use it, you can omit following steps.  
-Start MySQL server and start it when the machine is started.
+If you have already used MySQL server and use it, you can omit following steps.
+Start MySQL server and enable automatic start up on the machine boot.
 
     # chkconfig mysqld on
     # service mysqld start
 
 ### Initialization of Hatohol DB
-Use following command to initialize Hatohol DB
+Use the following command to initialize Hatohol DB
 
     $ hatohol-db-initiator --db_user <User name of MySQL root user> --db_password <User password of MySQL root user>
 
 Tips:
 
 - If the root password of the MySQL server is not set, use "".
-- You can change user name and password of the created DB by --hatohol-db-user and --hatohol-db-password options.
-    - Then, You need to fix the /etc/hatohol/hatohol.conf
+- You can change the user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
+    - Then, you need to fix the /etc/hatohol/hatohol.conf as the following.
 
-- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol database created. db_name, db_user and db_password are read from hatohol.conf by default. For example, hatohol.conf is placed in ${prefix}/etc/hatohol/hatohol.conf.
+```
+[mysql]
+- database=hatohol
++ database=your DB name
+- user=hatohol
++ user=user name of MySQL root user
+- password=hatohol
++ password= password of MySQL root user
 
-### Setup of Hatohol Client
-- Prepare a DB for Hatohol Client
+[FaceRest]
+workers=4
 
-Use following commands in MySQL to create database and user.
+** NOTE **
+The mark '+' at the head means a newly added line.
+The mark '-' at the head means a deleted line.
+
+```
+
+- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db_name, db_user and db_password are read from hatohol.conf by default.``
+
+### Setup of Hatohol Web Frontend
+- Prepare a DB for Hatohol Web Frontend
+
+Use the following commands in the MySQL command line tool to create DB and user.
 
     MySQL> CREATE DATABASE hatohol_client;
     MySQL> GRANT ALL PRIVILEGES ON hatohol_client.* TO hatohol@localhost IDENTIFIED BY 'hatohol';
@@ -94,7 +112,7 @@ Use following command to add tables into the db.
 
     # service hatohol start
 
-When Hatohol server successfully starts, init script shows following messages.
+When Hatohol server successfully starts, the init script shows the following messages.
 
     Starting hatohol: [INFO] <ConfigManager.cc:282> ConfigFile: [FaceRest] workers=4
     [INFO] <ConfigManager.cc:543> Use configuration file: /etc/hatohol/hatohol.conf
@@ -111,24 +129,24 @@ Access with a web browser
 By default, some security mechanisms such as SELinux and iptables block the access from other computers.
 You have to deactivate them if needed.
 > ** WARNING **
-> You should do the following things after you understand the security risk.
+> You should do the following steps after you understand the security risk.
 
-You can confirm the current SELinux status as
+You can confirm the current SELinux status as follows
 
     # getenforce
     Enforcing
 
-If 'Enforcing' is replied, it is enabled. And you can disable it as
+If 'Enforcing' is replied, it is enabled. And you can disable it as follows
 
     # setenforce 0
     # getenforce
     Permissive
 
 > ** Tips **
-> By editing /etc/selinux/config, it can be disabled permanently.
+> By editing /etc/selinux/config, you can disable it permanently.
 
 As for iptables, an allowed port can be added by editing /etc/sysconfig/iptables.
-The following is an example to allow port 8000.
+The following examples is an example to allow port 8000.
 
      -A INPUT -p icmp -j ACCEPT
      -A INPUT -i lo -j ACCEPT
@@ -144,7 +162,7 @@ Then, the following command reloads the iptables setting.
     # service iptables restart
 
 ### View of Hatohol information
-For example, if the Hatohol client runs on computer: 192.168.1.1,
+For example, if the Hatohol Web Frontend runs on computer: 192.168.1.1,
 Open the following URL from your Browser.
 
 - http://192.168.1.1/
@@ -155,7 +173,7 @@ Open the following URL from your Browser.
 
 Use Hatohol Arm Plugin Interface
 -------------------------------
-When using HAPI(Hatohol Arm Plugin Interface), you fix '/etc/qpidd.conf' as the following.
+When using HAPI(Hatohol Arm Plugin Interface), you fix '/etc/qpidd.conf' as follows.
 
     -auth=yes
     +auth=no
