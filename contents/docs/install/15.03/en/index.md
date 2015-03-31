@@ -146,7 +146,7 @@ If 'Enforcing' is replied, it is enabled. And you can disable it as follows
 > By editing /etc/selinux/config, you can disable it permanently.
 
 As for iptables, an allowed port can be added by editing /etc/sysconfig/iptables.
-The following examples is an example to allow port 8000.
+The following example allows port 8000.
 
      -A INPUT -p icmp -j ACCEPT
      -A INPUT -i lo -j ACCEPT
