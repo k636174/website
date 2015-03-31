@@ -104,7 +104,7 @@ Use the following commands in the MySQL command line tool to create DB and user.
 
 - Add tables into the DB
 
-Use following command to add tables into the db.
+Use following command to add tables used by Hatohol Web Frontend into the DB.
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
