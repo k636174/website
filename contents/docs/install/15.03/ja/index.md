@@ -63,7 +63,7 @@ CentOS 6.5 (x86_64)でのyumレポジトリを用いたインストール方法
     # service mysqld start
 
 ### Hatohol DBの初期化
-以下のコマンドを実行しHatohol DBを作成し，初期化してください。
+以下のコマンドでHatohol DBの作成と初期データの投入を行います。
 
     $ hatohol-db-initiator --db_user <MySQLのrootユーザー名> --db_password <MySQLのrootパスワード>
 
@@ -76,11 +76,11 @@ TIPS:
 ```
 [mysql]
 - database=hatohol
-+ database=your DB name
++ database=[貴方の好みのDB名]
 - user=hatohol
-+ user=user name of MySQL root user
++ user=[貴方の好みのDBユーザー名]
 - password=hatohol
-+ password= password of MySQL root user
++ password= [貴方の好みのDBユーザーのパスワード]
 
 [FaceRest]
 workers=4
@@ -92,13 +92,6 @@ workers=4
 
 - 生成されるDBの名前とユーザ名，パスワードを--db-name, --hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
     - オプションを使用せずにhatohol-db-initiatorコマンドを実行した場合，hatohol.confに記載されているDB名，ユーザー名，パスワードがデフォルトとして使用されます。
-
-
-### Hatohol DBのサーバータイプ更新
-
-	$ hatohol-db-initiator
-
-上記コマンドを使用しHatohol DB内のサーバータイプを更新することができます。また，15.03からは上記コマンドを実行する際，コマンドライン引数を必要としなくなりました。
 
 ### Hatohol Webのセットアップ
 - Hatohol Web用DBを用意する
