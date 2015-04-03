@@ -73,7 +73,9 @@ TIPS:
 
 - 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
     - その時は/etc/hatohol/hatohol.confファイルを修正してください。
-- 15.03では、hatohol-db-initiatorはhatoholデータベースを作成後、コマンドライン引数を必要としなくなりました。db_name、 db_userとdb_passwordはhatohol.confから読み込まれます。hatohol.confは${prefix}/etc/hatohol/hatohol.confに配置されています。
+- 15.03では、```hatohol-db-initiator```を実行する時に、コマンドライン引数を必要としなくなりました。
+    - ```db_name```、```db_user```と```db_password```は```hatohol.conf```から読み込まれます。
+    - ```hatohol.conf```は```/etc/hatohol/hatohol.conf```に配置されています。
 
 ### Hatohol Webのセットアップ
 - Hatohol Web用DBを用意する
