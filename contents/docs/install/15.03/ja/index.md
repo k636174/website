@@ -71,8 +71,8 @@ TIPS:
 
 - もしMySQLのrootパスワードが指定されていない場合、""を利用してください。
 
-- 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
-    - その時は/etc/hatohol/hatohol.confファイルを修正してください。
+- 生成されるDBのユーザ名とパスワードを```--hatohol-db-user```と```--hatohol-db-password```オプションを利用して変更することができます。
+    - その時は```/etc/hatohol/hatohol.conf```ファイルを修正してください。
 - 15.03では、```hatohol-db-initiator```を実行する時に、コマンドライン引数を必要としなくなりました。
     - ```db_name```、```db_user```と```db_password```は```hatohol.conf```から読み込まれます。
     - ```hatohol.conf```は```/etc/hatohol/hatohol.conf```に配置されています。
