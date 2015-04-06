@@ -7,8 +7,8 @@ If you want to save data of previous version, you get DB backup by the following
 
 ## How to get backup
 
-$ mysqldump -u [User name of MySQL root user] -p [Password of MySQL root user] [Old DB name] > hatohol.sql
+    $ mysqldump -u [User name of MySQL root user] -p [Password of MySQL root user] [Old DB name] > hatohol.sql
 
 ## How to import a backup to DB in the different name
 
-$ mysql -u [User name of MySaQL root user] -p [Password of MySQL root user] [New DB name] < hatohol.sql
+    $ mysql -u [User name of MySQL root user] -p [Password of MySQL root user] [New DB name] < hatohol.sql
