@@ -64,24 +64,25 @@ Start MySQL server and enable automatic start up on the machine boot.
     # service mysqld start
 
 ### Initialization of Hatohol DB
-Use the following command to initialize Hatohol DB
+Use the following command to initialize and input initial data Hatohol DB.
 
     $ hatohol-db-initiator --db_user <User name of MySQL root user> --db_password <User password of MySQL root user>
 
 Tips:
 
 - If the root password of the MySQL server is not set, use "".
-- You can change the user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
-    - Then, you need to fix the /etc/hatohol/hatohol.conf as the following.
+- You can change the DB name, the user name and the password of the created DB by editing hatohol.conf. hatohol.conf is installed in /etc/hatohol/hatohol.conf. The following is way to edit hatohol.conf.
 
 ```
 [mysql]
 - database=hatohol
-+ database=your DB name
++ database=your any DB name
+
 - user=hatohol
-+ user=user name of MySQL root user
++ user=your any user name of DB
+
 - password=hatohol
-+ password= password of MySQL root user
++ password= your any password of DB
 
 [FaceRest]
 workers=4
@@ -91,9 +92,6 @@ The mark '+' at the head means a newly added line.
 The mark '-' at the head means a deleted line.
 
 ```
-
-- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db_name, db_user and db_password are read from hatohol.conf by default.``
-
 ### Setup of Hatohol Web Frontend
 - Prepare a DB for Hatohol Web Frontend
 
