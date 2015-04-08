@@ -6,7 +6,7 @@ Installation of needed packages
 ### Register the yum repository of Project hatohol.
 Use the following command to save the repo file to /etc/yum.repos.d/ directory.
 
-    # wget -P /etc/yum.repos.d/ http://project-hatohol.github.io/repo/hatohol.repo
+    # wget -P /etc/yum.repos.d/ http://project-hatohol.github.io/repo/hatohol-el6.repo
 
 ### Register the yum repository of EPEL.
 Use the following command to add EPEL repository.
