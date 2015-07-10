@@ -8,8 +8,8 @@ CentOS 6.5 (x86_64) での14.12から15.03へのアップグレードについ�
 
 ## バックアップ取得方法
 
-$ mysqldump -u [MySQL のルートユーザー名] -p [MySQLのルートパスワード] [旧データベース名] > hatohol.sql
+    $ mysqldump -u [MySQL のルートユーザー名] -p [MySQLのルートパスワード] [旧データベース名] > hatohol.sql
 
 ## バックアップから別名でデータベースをインポートする方法
 
-$ mysql -u [MySQL のルートユーザー名] -p [MySQLのルートパスワード] [New database name] < hatohol.sql
+    $ mysql -u [MySQL のルートユーザー名] -p [MySQLのルートパスワード] [New database name] < hatohol.sql
