@@ -1,4 +1,4 @@
-How to install Hatohol on CentOS 6.5 (x86_64) with yum repository
+How to install Hatohol on CentOS 7 (x86_64) with yum repository
 =================================================================
 
 Installation of needed packages
