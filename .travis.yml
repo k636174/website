@@ -7,7 +7,8 @@ install:
 - sudo apt-add-repository -y ppa:libreoffice/libreoffice-4-2
 - sudo apt-get -qq update
 - sudo apt-get -qq install python3 python3-markdown unoconv python-uno ruby-dev rubygems libreoffice-core libreoffice-impress libreoffice-l10n-ja fonts-vlgothic
-- gem install sass bigdecimal bundler gem-wrappers io-console json minitest rake rdoc rvm
+- gem install bundler
+- bundle install
 script:
 - ./gen.py --output ./html
 after_success:
