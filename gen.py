@@ -34,7 +34,7 @@ def main():
 
 def gen_html(walk_dir, outpath_root, header, footer):
 	# Compile .scss files
-	sass_cmd = "sass --style expanded --update %s:%s" % (walk_dir, outpath_root)
+	sass_cmd = "bundle exec sass --style expanded --update %s:%s" % (walk_dir, outpath_root)
 	print(sass_cmd)
 	subprocess.call(sass_cmd, shell=True)
 
