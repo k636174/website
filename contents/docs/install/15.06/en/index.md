@@ -23,8 +23,8 @@ Use the following command to install Hatohol Web.
 
     # yum install hatohol-web
 
-### Building dependent packages
-The following packages are installed by the above commands.
+### Install dependent packages
+The following packages are installed automatically by the above commands.
 
 - Packages provided from repository of CentOS
     - glib2
@@ -45,14 +45,13 @@ The following packages are installed by the above commands.
     - json-glib
     - Django
 
-### Runtime dependent packages
-The following packages are required for Hatohol.
+The following packages are not installed automatically.
 
 - Packages provided from repository of CentOS
     - mariadb-server
     - qpid-cpp-server
 
-Use the following command to install MariaDB and Apache Qpid servers.
+Use the following command to install them.
 
     # yum install mariadb-server qpid-cpp-server
 
