@@ -93,10 +93,12 @@ TIPS:
 
 ### Hatohol serverの開始
 
+    # systemctl enable hatohol
     # systemctl start hatohol
 
 ### Hatohol Webの開始
 
+    # systemctl enable httpd
     # systemctl start httpd
 
 Webブラウザを使ったアクセス
@@ -126,6 +128,7 @@ firewallについては、以下のコマンドを実行することで許可ポ
 以下の例は80番ポートを許可する例です。
 
     # firewall-cmd --zone=public --add-port=80/tcp --permanent
+    # firewall-cmd --zone=public --add-port=80/tcp
 
 ### Hatohol情報の閲覧
 例えば、Hatohol clientが192.168.1.1で動作している場合、

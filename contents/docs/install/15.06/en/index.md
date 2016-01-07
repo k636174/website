@@ -111,10 +111,12 @@ Use following command to add tables used by Hatohol Web Frontend into the DB.
 
 ### Start of Hatohol server
 
+    # systemctl enable hatohol
     # systemctl start hatohol
 
 ### Start of Hatohol Web
 
+    # systemctl enable httpd
     # systemctl start httpd
 
 Access with a web browser
@@ -143,6 +145,7 @@ As for firewall, an allowed port can be added by executing the following command
 The following example allows port 8000.
 
     # firewall-cmd --zone=public --add-port=80/tcp --permanent
+    # firewall-cmd --zone=public --add-port=80/tcp
 
 ### View of Hatohol information
 For example, if the Hatohol Web Frontend runs on computer: 192.168.1.1,
