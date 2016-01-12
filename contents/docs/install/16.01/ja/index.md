@@ -67,7 +67,7 @@ CentOS 7 (x86_64)でのyumレポジトリを用いたインストール方法
 ### Hatohol DBの初期化
 以下のコマンドを実行しHatohol DBを初期化してください。
 
-    $ hatohol-db-initiator --db_user <MariaDBのrootユーザー名> --db_password <MariaDBのrootパスワード>
+    $ hatohol-db-initiator --db-user <MariaDBのrootユーザー名> --db-password <MariaDBのrootパスワード>
 
 TIPS:
 

@@ -68,7 +68,7 @@ Start MariaDB server and enable automatic start up on the machine boot.
 ### Initialization of Hatohol DB
 Use the following command to initialize Hatohol DB
 
-    $ hatohol-db-initiator --db_user <User name of MariaDB root user> --db_password <User password of MariaDB root user>
+    $ hatohol-db-initiator --db-user <User name of MariaDB root user> --db-password <User password of MariaDB root user>
 
 Tips:
 
