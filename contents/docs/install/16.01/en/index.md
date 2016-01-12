@@ -152,7 +152,7 @@ The following example allows port 8000.
 For example, if the Hatohol Web Frontend runs on computer: 192.168.1.1,
 Open the following URL from your Browser.
 
-- http://192.168.1.1/
+- http://192.168.1.1/hatohol
 
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
