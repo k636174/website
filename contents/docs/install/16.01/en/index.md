@@ -157,12 +157,3 @@ Open the following URL from your Browser.
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
-
-Use Hatohol Arm Plugin Interface
--------------------------------
-When using HAPI(Hatohol Arm Plugin Interface), you fix '/etc/qpidd.conf' as follows.
-
-    -auth=yes
-    +auth=no
-
-> ** NOTE ** The mark '+' at the head means a newly added line and the mark '-' at the head means a removed line.

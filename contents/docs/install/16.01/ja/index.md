@@ -143,14 +143,3 @@ firewallについては、以下のコマンドを実行することで許可ポ
 現在、上記ページは、Google ChromeおよびFirefoxを使ってチェックされています。
 Internet Explorerを使用する場合は、ご使用のバージョンによっては、
 表示レイアウトが崩れる場合があります。（IE11では正常に表示されることを確認しています）
-
-Hatohol Arm Plugin Interfaceを使用する場合
------------------------------------------
-あなたがHatohol Arm Plugin Interface(HAPI)を使用する場合、'/etc/qpidd.conf'を以下のように修正してください。
-
-    -auth=yes
-    +auth=no
-
-【メモ】
-先頭の'+'印は、新たに追加する行を意味します。
-先頭の'-'印は、削除する行を意味します。
