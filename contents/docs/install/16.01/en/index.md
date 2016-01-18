@@ -38,23 +38,21 @@ The following packages are installed automatically by the above commands.
     - mod_wsgi
     - python-argparse
     - python-pip
+    - json-glib
+    - Django
 - Package provided from repository of EPEL
     - librabbitmq
     - python-daemon
-- Packages provided from repository of Project Hatohol
-    - json-glib
-    - Django
 
 ### Runtime dependent packages
 The following packages are not installed automatically.
 
 - Packages provided from repository of CentOS
     - mariadb-server
-    - qpid-cpp-server
 
 Use the following command to install them.
 
-    # yum install mariadb-server qpid-cpp-server
+    # yum install mariadb-server
 
 Setup
 -----

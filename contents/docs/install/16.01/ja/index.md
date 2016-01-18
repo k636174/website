@@ -38,23 +38,21 @@ CentOS 7 (x86_64)でのyumレポジトリを用いたインストール方法
     - mod_wsgi
     - python-argparse
     - python-pip
+    - json-glib
+    - Django
 - EPELのレポジトリから提供されるパッケージ
     - librabbitmq
     - python-daemon
-- Project Hatoholのレポジトリから提供されるパッケージ
-    - json-glib
-    - Django
 
 ### 必要パッケージ
 以下のパッケージがHatoholの正常な動作に必要です。
 
 - CentOSのレポジトリから提供されるパッケージ
     - mariadb-server
-    - qpid-cpp-server
 
 次のコマンドでインストールしてください。
 
-    # yum install mariadb-server qpid-cpp-server
+    # yum install mariadb-server
 
 セットアップ
 ------------
