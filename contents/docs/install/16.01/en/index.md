@@ -71,8 +71,8 @@ Use the following command to initialize Hatohol DB
 Tips:
 
 - If the root password of the MariaDB server is not set, use "".
-- You can change the user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
-    - Then, you need to fix the /etc/hatohol/hatohol.conf as the following.
+- You can change the DB name, user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
+    - You can change them to fix the hatohol.conf as the following. hatohol.conf is putted on ${prefix}/etx/hatohol/hatohol.conf.
 
 ```
 [mysql]
@@ -92,7 +92,7 @@ The mark '-' at the head means a deleted line.
 
 ```
 
-- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db_name, db_user and db_password are read from hatohol.conf by default.``
+- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db-name, db-user and db-password are read from hatohol.conf by default.
 
 ### Setup of Hatohol Web Frontend
 - Prepare a DB for Hatohol Web Frontend

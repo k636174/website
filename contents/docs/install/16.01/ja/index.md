@@ -71,9 +71,27 @@ TIPS:
 
 - もしMariaDBのrootパスワードが指定されていない場合、""を利用してください。
 
-- 生成されるDBのユーザ名とパスワードを--hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
-    - その時は/etc/hatohol/hatohol.confファイルを修正してください。
-- 15.03では、hatohol-db-initiatorはhatoholデータベースを作成後、コマンドライン引数を必要としなくなりました。db_name、 db_userとdb_passwordはhatohol.confから読み込まれます。hatohol.confは${prefix}/etc/hatohol/hatohol.confに配置されています。
+- 生成されるDB名,ユーザ名,パスワードを--db-name, --hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
+    - /etc/hatohol/hatohol.confファイルを以下のように修正することによっても変更可能です。hatohol.confは${prefix}/etc/hatohol/hatohol.confに配置されています。
+
+```
+[mysql]
+- database=hatohol
++ database=your DB name
+- user=hatohol
++ user=user name of MariaDB root user
+- password=hatohol
++ password= password of MariaDB root user
+
+[FaceRest]
+workers=4
+
+** メモ **
+先頭の'+'印は、新たに追加する行を意味します。
+先頭の'-'印は、削除する行を意味します。
+```
+
+- 15.03から、hatohol-db-initiatorはhatoholデータベースを作成後、コマンドライン引数を必要としなくなりました。db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
 
 ### Hatohol Webのセットアップ
 - Hatohol Web用DBを用意する
