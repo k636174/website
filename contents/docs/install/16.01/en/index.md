@@ -155,3 +155,9 @@ Open the following URL from your Browser.
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
+
+### Set Hatohol Arm Plugin Interface 2 setting
+If you want to use Hatohol Arm Plugin Interface 2, you should set RabbitMQ.
+Please refer to the following document.
+
+ - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
