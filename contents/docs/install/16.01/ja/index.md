@@ -80,7 +80,7 @@ TIPS:
 
 以下のMySQLクエリを実行してデータベースとユーザを作成してください。
 
-    MariaDB> CREATE DATABASE hatohol_client;
+    MariaDB> CREATE DATABASE hatohol_client DEFAULT CHARACTER SET utf8;
     MariaDB> GRANT ALL PRIVILEGES ON hatohol_client.* TO hatohol@localhost IDENTIFIED BY 'hatohol';
 
 - テーブルをDBに追加する

@@ -99,7 +99,7 @@ The mark '-' at the head means a deleted line.
 
 Use the following commands in the MySQL command line tool to create DB and user.
 
-    MariaDB> CREATE DATABASE hatohol_client;
+    MariaDB> CREATE DATABASE hatohol_client DEFAULT CHARACTER SET utf8;
     MariaDB> GRANT ALL PRIVILEGES ON hatohol_client.* TO hatohol@localhost IDENTIFIED BY 'hatohol';
 
 - Add tables into the DB
