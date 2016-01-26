@@ -2,6 +2,7 @@
 ==========
 
 - [インストール](/docs/install/16.01/ja/) ([English](/docs/install/16.01/en/))
+- [アップグレード](/docs/upgrade/16.01/ja/) ([English](/docs/upgrade/16.01/en/))
 
 旧バージョンのドキュメント
 
