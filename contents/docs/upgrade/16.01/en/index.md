@@ -8,19 +8,19 @@ How to upgrade Hatohol
 
 Stop the Hatohol Server to upgrade.
 
-Use the following commands to hatohol Server.
+Use the following commands to hatohol Server:
 
     # systemctl stop hatohol
 
 ### Upgrade the Hatohol
 
-Use the following command to upgrade Hatohol-16.01.
+Use the following command to upgrade Hatohol-16.01:
 
     # yum update hatohol-server hatohol-web
 
 ### Upgrade Hatohol DB
 
-Use the following command to upgrade Hatohol DB.
+Use the following command to upgrade Hatohol DB:
 
     $ hatohol-db-initiator -f --db-user <User name of MySQL user> --db-password <User password of MySQL user>
 
@@ -28,20 +28,20 @@ Use the following command to upgrade Hatohol DB.
 
 ### Upgrade Hatohol Web DB
 
-Use the following command to reset Hatohol Web DB.
+Use the following command to reset Hatohol Web DB:
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
 ### Start of Hatohol Server
 
-Use the following command to start Hatohol.
+Use the following command to start Hatohol:
 
     # systemctl start hatohol
     # systemctl restart httpd
 
 ### Access Hatohol Web
 
-Hatohol Web URL is changed since this version.
+Hatohol Web URL has been changed since this release.
 
 Please access to the following URL with Web browser.
 
