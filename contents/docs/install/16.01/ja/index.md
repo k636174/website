@@ -32,7 +32,6 @@ CentOS 7 (x86_64)でのyumレポジトリを用いたインストール方法
     - sqlite
     - mariadb
     - libuuid
-    - qpid-cpp-client
     - MySQL-python
     - httpd
     - mod_wsgi
