@@ -104,7 +104,7 @@ Use the following commands in the MySQL command line tool to create DB and user.
 
 - Add tables into the DB
 
-Use following command to add tables used by Hatohol Web Frontend into the DB.
+Use the following command to add tables used by Hatohol Web Frontend into the DB.
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
@@ -126,12 +126,12 @@ You have to deactivate them if needed.
 > ** WARNING **
 > You should do the following steps after you understand the security risk.
 
-You can confirm the current SELinux status as follows
+You can confirm the current SELinux status as follows:
 
     # getenforce
     Enforcing
 
-If 'Enforcing' is replied, it is enabled. And you can disable it as follows
+If 'Enforcing' is replied, it is enabled. And you can disable it as follows:
 
     # setenforce 0
     # getenforce
@@ -141,14 +141,14 @@ If 'Enforcing' is replied, it is enabled. And you can disable it as follows
 > By editing /etc/selinux/config, you can disable it permanently.
 
 As for firewall, an allowed port can be added by executing the following command.
-The following example allows port 8000.
+The following example commands allows port 8000.
 
     # firewall-cmd --zone=public --add-port=80/tcp --permanent
     # firewall-cmd --zone=public --add-port=80/tcp
 
 ### View of Hatohol information
 For example, if the Hatohol Web Frontend runs on computer: 192.168.1.1,
-Open the following URL from your Browser.
+open the following URL from your Browser.
 
 - http://192.168.1.1/hatohol
 
@@ -156,8 +156,8 @@ Open the following URL from your Browser.
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
 
-### Set Hatohol Arm Plugin Interface 2 setting
+### Set up Hatohol Arm Plugin Interface 2 setting
 If you want to use Hatohol Arm Plugin Interface 2, you should set RabbitMQ.
-Please refer to the following document.
+Please refer to the following document:
 
  - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
