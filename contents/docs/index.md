@@ -1,7 +1,8 @@
 ドキュメント
 ==========
 
-- [インストール](/docs/install/15.06/ja/) ([English](/docs/install/15.06/en/))
+- [インストール](/docs/install/16.01/ja/) ([English](/docs/install/16.01/en/))
+- [アップグレード](/docs/upgrade/16.01/ja/) ([English](/docs/upgrade/16.01/en/))
 
 旧バージョンのドキュメント
 
@@ -26,6 +27,8 @@
 - 15.03
 	- [インストール](/docs/install/15.03/ja/) ([English](/docs/install/15.03/en/))
 	- [アップグレード](/docs/upgrade/15.03/ja/) ([English](/docs/upgrade/15.03/en/))
+- 15.06
+	- [インストール](/docs/install/15.06/ja/) ([English](/docs/install/15.06/en/))
 
 外部のドキュメント等
 ------------------
