@@ -32,7 +32,6 @@ The following packages are installed automatically by the above commands.
     - sqlite
     - mysql
     - libuuid
-    - qpid-cpp-client
     - MySQL-python
     - httpd
     - mod_wsgi
