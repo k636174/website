@@ -41,7 +41,6 @@ The following packages are installed automatically by the above commands.
     - Django
 - Package provided from repository of EPEL
     - librabbitmq
-    - python-daemon
 
 ### Runtime dependent packages
 The following packages are not installed automatically.
@@ -156,7 +155,7 @@ open the following URL from your Browser.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
 
 ### Set up Hatohol Arm Plugin Interface 2 setting
-If you want to use Hatohol Arm Plugin Interface 2, you should set RabbitMQ.
+If you want to use Hatohol Arm Plugin 2(HAP2), you should set RabbitMQ and HAP2 install.
 Please refer to the following document:
 
  - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md

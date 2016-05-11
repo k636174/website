@@ -41,7 +41,6 @@ CentOS 7 (x86_64)でのyumレポジトリを用いたインストール方法
     - Django
 - EPELのレポジトリから提供されるパッケージ
     - librabbitmq
-    - python-daemon
 
 ### 必要パッケージ
 以下のパッケージがHatoholの正常な動作に必要です。
@@ -160,7 +159,7 @@ Internet Explorerを使用する場合は、ご使用のバージョンによっ
 表示レイアウトが崩れる場合があります。（IE11では正常に表示されることを確認しています）
 
 ### Hatohol Arm Plugin Interface 2の設定
-Hatohol Arm Plugin Interface 2を使用する場合は以下のドキュメントを参照し，
-RabbitMQの設定を行ってください。
+Hatohol Arm Plugin 2(HAP2)を使用する場合は以下のドキュメントを参照し，
+RabbitMQの設定,またHAP2のインストールを行ってください。
 
  - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
