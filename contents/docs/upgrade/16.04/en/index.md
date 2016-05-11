@@ -41,8 +41,6 @@ Use the following command to start Hatohol:
 
 ### Access Hatohol Web
 
-Hatohol Web URL has been changed since this release.
-
 Please access to the following URL with Web browser.
 
 `http://IP_ADDRESS or HOST_NAME/hatohol`

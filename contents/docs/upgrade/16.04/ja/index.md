@@ -41,8 +41,6 @@ Hatoholのアップデート方法
 
 ### Hatohol Webへのアクセス
 
-Hatohol WebのURLは今回のリリースから変更されました。
-
 ブラウザを用い、以下のURLからアクセスしてください。
 
 `http://IP_ADDRESS or HOST_NAME/hatohol`
