@@ -1,8 +1,10 @@
 ドキュメント
 ==========
 
-- [インストール](/docs/install/16.01/ja/) ([English](/docs/install/16.01/en/))
-- [アップグレード](/docs/upgrade/16.01/ja/) ([English](/docs/upgrade/16.01/en/))
+- 16.04(Latest Release)
+	- [インストール](/docs/install/16.04/ja/) ([English](/docs/install/16.04/en/))
+	- [アップグレード](/docs/upgrade/16.04/ja/) ([English](/docs/upgrade/16.04/en/))
+
 
 旧バージョンのドキュメント
 
@@ -29,13 +31,19 @@
 	- [アップグレード](/docs/upgrade/15.03/ja/) ([English](/docs/upgrade/15.03/en/))
 - 15.06
 	- [インストール](/docs/install/15.06/ja/) ([English](/docs/install/15.06/en/))
+- 16.01
+	- [インストール](/docs/install/16.01/ja/) ([English](/docs/install/16.01/en/))
+	- [アップグレード](/docs/upgrade/16.01/ja/) ([English](/docs/upgrade/16.01/en/))
 
 外部のドキュメント等
 ------------------
 ### 連載等
 - Hatoholで実現する分散監視 - @IT
+	- [目次](http://www.atmarkit.co.jp/ait/kw/hatohol.html)
 	- [できぬなら作ってしまえ? OSS監視ツール「Hatohol」ができるまで](http://www.atmarkit.co.jp/ait/articles/1402/13/news008.html)
 	- [初心者にも分かる、Hatoholのインストールと初期設定](http://www.atmarkit.co.jp/ait/articles/1403/13/news007.html)
+	- [監視画面の見方，読み方](http://www.atmarkit.co.jp/ait/articles/1406/02/news011.html)
+	- [イベント発生→スクリプト起動、Hatoholのアクションを設定する](http://www.atmarkit.co.jp/ait/articles/1407/29/news003.html)
 
 ### 発表資料等
 - [Hatohol (はとほる) で実現するZabbix/Nagiosの監視統合、大規模監視](http://www.slideshare.net/kz0817/osc-tokyo-20140228) - [オープンソースカンファレンス 2014 Tokyo/Spring](http://www.ospn.jp/osc2014-spring/) 2014/02/28

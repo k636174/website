@@ -23,16 +23,16 @@
 			<h2>更新情報・お知らせ</h2>
 			<table class="table">
 				<tr>
-					<td>2014/10/30</td>
-					<td><a href="http://www.ospn.jp/osc2014-fall/">2014/11/22 OSC@福岡</a>に出展・セミナーをします。</td>
+					<td>2016/5/13</td>
+					<td>Hatohol version 16.04が本日リリースされました。(<a href="http://www.hatohol.org/docs/install/16.04/ja/">インストールドキュメント</a>)</td>
 				</tr>
 				<tr>
-					<td>2014/09/30</td>
-					<td>Hatohol version 14.09が本日リリースされました。<a href="/docs/install/14.09/ja/">(インストールドキュメント)</a></td>
+					<td>2016/1/31</td>
+					<td>Hatohol version 16.01が本日リリースされました。(<a href="http://www.hatohol.org/docs/install/16.01/ja/">インストールドキュメント</a>)</td>
 				</tr>
 				<tr>
-					<td>2014/08/25</td>
-					<td><a href="http://www.ospn.jp/osc2014-fall/">2014/10/18-19 OSC@東京</a>に出展・セミナーをします。</td>
+					<td>2015/6/30</td>
+					<td>Hatohol version 15.06が本日リリースされました。(<a href="http://www.hatohol.org/docs/install/15.06/ja/">インストールドキュメント</a>)</td>
 				</tr>
 				<tr>
 					<td><a href="/updates/">もっと見る</a></td>
