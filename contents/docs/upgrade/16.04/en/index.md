@@ -9,7 +9,7 @@ If you want to save data of previous version, you get DB backup by the following
 
 Built-in Arm retrieving mechanism has been removed from hatohol server in this release.
 
-Please get use the monitoring data by Hatohol Arm Plugin2. 
+Please get the monitoring data with Hatohol Arm Plugin2 plugins. 
 
 ## How to get backup
 
