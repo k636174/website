@@ -1,46 +1,14 @@
-How to upgrade Hatohol on CentOS 7  from version 15.06 to version 16.01 with yum repository
-=====================================================================================================
+About Upgrade on CentOS 7 (x86_64) from version 16.01 to version 16.04
+========================================================================
 
-How to upgrade Hatohol
-----------------------
+## ***16.04 doesn't support upgrade from previous version.***
 
-### Stop of the Hatohol Server
+If you want to save data of previous version, you get DB backup by the following way, and import to DB in different name. Otherwise, don't import and keep it intact.
 
-Stop the Hatohol Server to upgrade.
+## How to get backup
 
-Use the following commands to hatohol Server:
+    $ mysqldump -u [User name of MySQL root user] -p [Password of MySQL root user] [Old DB name] > hatohol.sql
 
-    # systemctl stop hatohol
+## How to import a backup to DB in the different name
 
-### Upgrade the Hatohol
-
-Use the following command to upgrade Hatohol-16.01:
-
-    # yum update hatohol-server hatohol-web
-
-### Upgrade Hatohol DB
-
-Use the following command to upgrade Hatohol DB:
-
-    $ hatohol-db-initiator -f --db-user <User name of MySQL user> --db-password <User password of MySQL user>
-
- - If the root password of the MySQL server is not set, just pass '' for --db-password.
-
-### Upgrade Hatohol Web DB
-
-Use the following command to reset Hatohol Web DB:
-
-    # /usr/libexec/hatohol/client/manage.py syncdb
-
-### Start of Hatohol Server
-
-Use the following command to start Hatohol:
-
-    # systemctl start hatohol
-    # systemctl restart httpd
-
-### Access Hatohol Web
-
-Please access to the following URL with Web browser.
-
-`http://IP_ADDRESS or HOST_NAME/hatohol`
+    $ mysql -u [User name of MySQL root user] -p [Password of MySQL root user] [New DB name] < hatohol.sql
