@@ -106,6 +106,12 @@ Use the following command to add tables used by Hatohol Web Frontend into the DB
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
+### Set up Hatohol Arm Plugin Interface 2 setting
+You should setup RabbitMQ and HAP2 to retrieve data from Zabbix, Nagios, and Ceilometer etc. via Hatohol Arm Plugin 2(HAP2).
+Please refer to the following document:
+
+ - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
+
 ### Start of Hatohol server
 
     # systemctl enable hatohol
@@ -153,9 +159,3 @@ open the following URL from your Browser.
 > ** Note **
 > Currently the above pages have been checked with Google Chrome and Firefox.
 > When using Internet Explorer, display layouts may collapse depending on the version of use.
-
-### Set up Hatohol Arm Plugin Interface 2 setting
-You should setup RabbitMQ and HAP2 to retrieve data from Zabbix, Nagios, and Ceilometer etc. via Hatohol Arm Plugin 2(HAP2).
-Please refer to the following document:
-
- - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md

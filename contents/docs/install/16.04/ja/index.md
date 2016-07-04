@@ -105,6 +105,12 @@ workers=4
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
+### Hatohol Arm Plugin Interface 2の設定
+Hatohol Arm Plugin 2(HAP2)を使用するために以下のドキュメントを参照し，
+RabbitMQの設定,またHAP2のインストールを行ってください。
+
+ - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
+
 ### Hatohol serverの開始
 
     # systemctl enable hatohol
@@ -157,9 +163,3 @@ firewallについては、以下のコマンドを実行することで許可ポ
 現在、上記ページは、Google ChromeおよびFirefoxを使ってチェックされています。
 Internet Explorerを使用する場合は、ご使用のバージョンによっては、
 表示レイアウトが崩れる場合があります。（IE11では正常に表示されることを確認しています）
-
-### Hatohol Arm Plugin Interface 2の設定
-Hatohol Arm Plugin 2(HAP2)を使用する場合は以下のドキュメントを参照し，
-RabbitMQの設定,またHAP2のインストールを行ってください。
-
- - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
