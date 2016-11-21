@@ -24,7 +24,8 @@ Use the following command to install Hatohol Web.
     # yum install hatohol-web
 
 ### Install dependent packages
-The following packages are installed automatically by the above commands.
+The following packages are installed automatically by the above commands.  
+(These packages are installed at the same time as yum install.)
 
 - Packages provided from repository of CentOS
     - glib2
@@ -90,7 +91,7 @@ The mark '-' at the head means a deleted line.
 
 ```
 
-- Since 15.03, hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db-name, db-user and db-password are read from hatohol.conf by default.
+- hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db-name, db-user and db-password are read from hatohol.conf by default.
 
 ### Setup of Hatohol Web Frontend
 - Prepare a DB for Hatohol Web Frontend
@@ -106,8 +107,8 @@ Use the following command to add tables used by Hatohol Web Frontend into the DB
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
-### Set up Hatohol Arm Plugin Interface 2 setting
-You should setup RabbitMQ and HAP2 to retrieve data from Zabbix, Nagios, and Ceilometer etc. via Hatohol Arm Plugin 2(HAP2).
+### Set up Hatohol Arm Plugin Interface setting
+You should setup RabbitMQ and HAP2 to retrieve data from Zabbix, Nagios, and Ceilometer etc. via Hatohol Arm Plugin(HAP).
 Please refer to the following document:
 
  - https://github.com/project-hatohol/hatohol/blob/master/doc/server/hap2/HowToUse.md
