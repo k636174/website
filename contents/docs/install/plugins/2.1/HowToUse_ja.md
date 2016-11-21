@@ -1,6 +1,6 @@
 Hatohol Arm Pluginの使い方
 =======================
-※このドキュメントは2016/11/15現在の情報を元に記載されています
+※このドキュメントは2016/11/21現在の情報を元に記載されています
 
 CentOS7へのHatohol Arm Plugin（以下HAP）インストール、設定方法。
 
@@ -165,4 +165,5 @@ amqp_password = hatohol⑥
 ④Hatohol WebUIで設定する静的キューアドレス（ここで設定した文字列をWebUIにもコピペしてください）
 ⑤RabbitMQで設定した仮想ホスト名に対するユーザ名（hatoholと異なるidを付与した場合）
 ⑥RabbitMQで設定したユーザ名に対するパスワード（hatoholと異なるpwを付与した場合）
+
 
