@@ -112,7 +112,7 @@ db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
 ### Hatohol Arm Plugin Interfaceの設定
 Hatohol Arm Plugin(以下HAP)を使用するために以下のドキュメントを参照し、RabbitMQの設定とHAPのインストールを行ってください。
 
-![HAP2インストール手順](../../plugins/2.1/HowToUse_ja.md)
+![HAPインストール手順](../../plugins/2.1/HowToUse_ja.md)
 
 ### Hatohol serverの開始
 
