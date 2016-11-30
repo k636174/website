@@ -1,9 +1,9 @@
 ドキュメント
 ==========
 
-- 16.04(Latest Release)
-	- [インストール](/docs/install/16.04/ja/) ([English](/docs/install/16.04/en/))
-	- [アップグレード](/docs/upgrade/16.04/ja/) ([English](/docs/upgrade/16.04/en/))
+- 16.12(Latest Release)
+	- [インストール](/docs/install/16.12/ja/) ([English](/docs/install/16.12/en/))
+	- [アップグレード](/docs/upgrade/16.12/ja/) ([English](/docs/upgrade/16.12/en/))
 
 
 旧バージョンのドキュメント
@@ -34,6 +34,9 @@
 - 16.01
 	- [インストール](/docs/install/16.01/ja/) ([English](/docs/install/16.01/en/))
 	- [アップグレード](/docs/upgrade/16.01/ja/) ([English](/docs/upgrade/16.01/en/))
+- 16.04
+	- [インストール](/docs/install/16.04/ja/) ([English](/docs/install/16.04/en/))
+	- [アップグレード](/docs/upgrade/16.04/ja/) ([English](/docs/upgrade/16.04/en/))
 
 外部のドキュメント等
 ------------------
