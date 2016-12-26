@@ -26,7 +26,8 @@ Hatoholは、Hatoholサーバー、HAP、RabbitMQサーバー、MariaDBをそれ
 
 EPELを使用してRabbitMQサーバーをインストールします。
 
-以下のコマンドを実行し、EPELレポジトリの登録をしてください。
+以下のコマンドを実行し、EPELレポジトリの登録をしてください。  
+すでに登録済みの場合は不要です。
 
     # yum install epel-release
 
@@ -53,8 +54,8 @@ firewalldで5672/tcpポートを許可し、SELinuxを無効にする必要が�
 
 firewallについては、以下のコマンドを実行することで許可ポートを追加できます。 以下の例は5672番ポートを許可する例です。
 
-    # firewall-cmd --add-port = 5672 / tcp --zone = public --permanent
-    # firewall-cmd --add-port = 5672 / tcp --zone = public
+    # firewall-cmd --add-port=5672/tcp --zone=public --permanent
+    # firewall-cmd --add-port=5672/tcp --zone=public
 
 次のコマンドでSELinuxを無効にする必要があります。
 
