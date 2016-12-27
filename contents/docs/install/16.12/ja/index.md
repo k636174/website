@@ -93,22 +93,21 @@ TIPS:
 - 生成されるDB名、ユーザ名、パスワードを--db-name, --hatohol-db-userと--hatohol-db-passwordオプションを利用して変更することができます。
     - /etc/hatohol/hatohol.confファイルを以下のように修正することによっても変更可能です。hatohol.confは${prefix}/etc/hatohol/hatohol.confに配置されています。
 
-```
-[mysql]
-- database=hatohol
-+ database=your DB name
-- user=hatohol
-+ user=user name of MariaDB root user
-- password=hatohol
-+ password= password of MariaDB root user
 
-[FaceRest]
-workers=4
-
+    [mysql]
+    - database=hatohol
+    + database=your DB name
+    - user=hatohol
+    + user=user name of MariaDB root user
+    - password=hatohol
+    + password= password of MariaDB root user
+    
+    [FaceRest]
+    workers=4
+    
 ** メモ **
 先頭の'+'印は、新たに追加する行を意味します。
 先頭の'-'印は、削除する行を意味します。
-```
 
 - hatohol-db-initiatorはhatoholデータベースを作成後はコマンドライン引数を必要としなくなりました。  
 db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
@@ -132,7 +131,7 @@ db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
 Hatohol Arm Plugin(以下HAP)を使用するために以下のドキュメントを参照し、RabbitMQの設定とHAPのインストールを行ってください。
 （HAPをHatoholサーバーと同一サーバーに配置しないケースもあるため、別ドキュメントとしてあります）
 
-![HAPインストール手順](../../plugins/2.1/HowToUse_ja.md)
+[HAPインストール手順](../../plugins/2.1/HowToUse_ja.md)
 
 ### Hatohol serverの開始
 
