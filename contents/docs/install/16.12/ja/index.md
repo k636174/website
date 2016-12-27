@@ -103,10 +103,10 @@ TIPS:
     
     [FaceRest]
     workers=4
-
-** メモ **  
-先頭の'+'印は、新たに追加する行を意味します。  
-先頭の'-'印は、削除する行を意味します。
+    
+    ** メモ **  
+    先頭の'+'印は、新たに追加する行を意味します。  
+    先頭の'-'印は、削除する行を意味します。
 
 - hatohol-db-initiatorはhatoholデータベースを作成後はコマンドライン引数を必要としなくなりました。  
 db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
@@ -126,7 +126,7 @@ db-name、 db-userとdb-passwordはhatohol.confから読み込まれます。
 
     # /usr/libexec/hatohol/client/manage.py syncdb
 
-### Hatohol Arm Plugin Interfaceの設定
+### Hatohol Arm Plugin Interfaceのセットアップ
 Hatohol Arm Plugin(以下HAP)を使用するために以下のドキュメントを参照し、RabbitMQの設定とHAPのインストールを行ってください。
 （HAPをHatoholサーバーと同一サーバーに配置しないケースもあるため、別ドキュメントとしてあります）
 
