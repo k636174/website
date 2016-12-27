@@ -1,4 +1,4 @@
-CentOS 7 (x86_64)での16.04から16.12へのyumを用いたアップグレード方法
+CentOS 7 (x86_64)での16.04から16.12へのアップグレード方法
 =====================================================================
 
 Hatoholのアップデート方法
@@ -22,15 +22,15 @@ Hatoholのアップデート方法
 
 以下のコマンドを用いてHatohol ServerのDBをアップデートしてください。
 
-    $ hatohol-db-initiator -f --db-user <MySQLのユーザー名> --db-password <MySQLユーザーのパスワード>
+    $ mysql -u <MySQLのユーザー名> -p <MySQLユーザーのパスワード> hatohol
+    
+    > alter table incident_histories modify column comment VARCHAR(32767);
 
-- もしMySQLのrootパスワードが設定されていない場合、""を利用してください。
+TBL:incident_historiesのコメントカラムを2048文字から32767文字に拡張します。
+発生したイベントにコメントを付与する場合、最大文字数が増えます。
+この対処を行わない場合、コメントの最大文字数は今までどおり2048文字となりますが
+特に支障なく使い続けることができます。
 
-### Hatohol Web DBの更新
-
-以下のコマンドでHatohol Web DBの再設定を行って下さい。
-
-    # /usr/libexec/hatohol/client/manage.py syncdb
 
 ### Hatohol Serverの開始
 
