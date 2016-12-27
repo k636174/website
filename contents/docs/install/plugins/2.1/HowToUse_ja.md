@@ -1,10 +1,10 @@
 Hatohol Arm Pluginの使い方
 =======================
-※このドキュメントは2016/11/21現在の情報を元に記載されています
+※このドキュメントは2016/12/26現在の情報を元に記載されています
 
 CentOS7へのHatohol Arm Plugin（以下HAP）インストール、設定方法。
 
-このドキュメントはHatoholサーバー、RabbitMQサーバー、HAP、を同一ホスト上で動かすケースを基本として記述してあります。
+このドキュメントはHatoholサーバー、RabbitMQサーバー、HAPを同一ホスト上で動かすケースを基本として記述してあります。
 Hatoholは、Hatoholサーバー、HAP、RabbitMQサーバー、MariaDBをそれぞれ異なるサーバーで動かす構成も可能であるため、一部、またはすべてを個別のホストで動かす場合には別途設定が必要なケースがあります。  
 可能なサーバー、モジュール構成は次のURLを参照してください。  
 [サーバー、モジュール構成](https://github.com/project-hatohol/hatohol/wiki/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%80%81%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E6%A7%8B%E6%88%90)
@@ -52,7 +52,8 @@ firewalldで5672/tcpポートを許可し、SELinuxを無効にする必要が�
 
 **【警告】 下記の設定を行うにあたり、セキュリティリスクについてよく理解してください。**
 
-firewallについては、以下のコマンドを実行することで許可ポートを追加できます。 以下の例は5672番ポートを許可する例です。
+firewallについては、以下のコマンドを実行することで許可ポートを追加できます。 以下の例は5672番ポートを許可する例です。  
+TLS接続を使用する場合デフォルトでは5671番ポートが使われます。必要に応じて許可してください。
 
     # firewall-cmd --add-port=5672/tcp --zone=public --permanent
     # firewall-cmd --add-port=5672/tcp --zone=public
@@ -61,8 +62,6 @@ firewallについては、以下のコマンドを実行することで許可ポ
 
     # setsebool -P nis_enabled 1
 
-
-TLS接続を使用する場合は次の設定を参照してください。[TLS設定]（＃user-content-tls-setting）
 
 ---
 
@@ -94,7 +93,8 @@ RabbitMQにHatoholで使用する仮想ホスト、ユーザーID、パスワー
     # yum install epel-release
 
 ### Project Hatohol公式yumレポジトリの登録
-Hatoholサーバーをインストールしたホストと異なるホストにインストールする場合、以下のコマンドを実行し、Project Hatohol公式が提供するyumレポジトリの登録をしてください。
+Hatoholサーバーをインストールしたホストと異なるホストにインストールする場合、以下のコマンドを実行し、Project Hatohol公式が提供するyumレポジトリの登録をしてください。  
+すでに追加されている場合にはこの手順は不要です。
 
     # wget -P /etc/yum.repos.d/ http://project-hatohol.github.io/repo/hatohol-el7.repo
 
@@ -116,7 +116,7 @@ hap2-nagios-livestatusをインストールする場合、 `python-mk-livestatus
 
 HAPインストール後は、Hatohol WebUIでHAPを選択できるように設定する必要があります。
 
-各HAPのRPMは/usr/share/hatohol/sqlに拡張子.sqlのファイルをインストールします。
+各HAPのRPMは/usr/share/hatohol/sql/に拡張子.sqlのファイルをインストールします。
 それぞれのファイルとhatohol-db-initiatorコマンドで監視サーバーの種類を追加し、WebUIから使用できるよう設定します。
 次のコマンドを実行してください。
 
@@ -132,7 +132,7 @@ HAPインストール後は、Hatohol WebUIでHAPを選択できるように設�
 	1. HatoholサーバーをインストールしたホストにHAPもインストールする  
 	この場合、hatohol-db-initiatorコマンド実行後にHAPをアンインストールして問題ありません。
 
-1. DBサーバーがHatoholサーバーと異なるホストにある場合、ポート番号がデフォルトとは異なるポートの場合
+1. DBサーバーがHatoholサーバーと異なるホストにある場合や、ポート番号がデフォルトとは異なるポートの場合
 	1. hatohol-db-initiatorコマンドに、次のオプションを付与して実行してください。  
 	--host <ホスト名またはIPアドレス>  
 	--port <ポート番号>
@@ -143,12 +143,12 @@ HAPインストール後は、Hatohol WebUIでHAPを選択できるように設�
 
 ---
 
-## HAPの設定(Hatoholサーバーと別ホストに設置した場合のconf設定)
+## HAPの設定(パッシブ: Hatoholサーバーと別ホストに設置した場合のconf設定)
 
 HAPをHatoholサーバーと別のホストに設置した場合には/etc/hatohol/hap2.confファイルへの設定が必要です。  
 （同一ホストに設置した場合にはHatoholがHAPを起動するため設定は不要）
 
-次の6箇所は修正の必要性を検討してください。
+次の6箇所は修正を検討してください。
 
 ```
 [hap2]
@@ -163,7 +163,7 @@ amqp_password = hatohol⑥
 ①RabbitMQをインストールしたホスト名、またはIPアドレス
 ②RabbitMQが待ち受けしているポート番号（デフォルトから変更がある場合）
 ③RabbitMQで設定した仮想ホスト名（※必ずコメントを外してください）
-④Hatohol WebUIで設定する静的キューアドレス（ここで設定した文字列をWebUIにもコピペしてください）
+④Hatohol WebUIで設定する静的キューアドレス（ここで設定した文字列をWebUIの静的キューアドレスにも設定してください）
 ⑤RabbitMQで設定した仮想ホスト名に対するユーザ名（hatoholと異なるidを付与した場合）
 ⑥RabbitMQで設定したユーザ名に対するパスワード（hatoholと異なるpwを付与した場合）
 
