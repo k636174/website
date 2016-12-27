@@ -152,19 +152,19 @@ HAPをHatoholサーバーと別のホストに設置した場合には/etc/hatoh
 
 ```
 [hap2]
-amqp_broker = localhost①
-#amqp_port = 5672②
-#amqp_vhost = hatohol③
-amqp_queue = q01④
-amqp_user = hatohol⑤
-amqp_password = hatohol⑥
+amqp_broker = localhost ...1
+#amqp_port = 5672 ...2
+#amqp_vhost = hatohol ...3
+amqp_queue = q01 ...4
+amqp_user = hatohol ...5
+amqp_password = hatohol ...6
 ```
 
-①RabbitMQをインストールしたホスト名、またはIPアドレス
-②RabbitMQが待ち受けしているポート番号（デフォルトから変更がある場合）
-③RabbitMQで設定した仮想ホスト名（※必ずコメントを外してください）
-④Hatohol WebUIで設定する静的キューアドレス（ここで設定した文字列をWebUIの静的キューアドレスにも設定してください）
-⑤RabbitMQで設定した仮想ホスト名に対するユーザ名（hatoholと異なるidを付与した場合）
-⑥RabbitMQで設定したユーザ名に対するパスワード（hatoholと異なるpwを付与した場合）
+* 1. RabbitMQをインストールしたホスト名、またはIPアドレス
+* 1. RabbitMQが待ち受けしているポート番号（デフォルトから変更がある場合）
+* 1. RabbitMQで設定した仮想ホスト名（※必ずコメントを外してください）
+* 1. Hatohol WebUIで設定する静的キューアドレス（ここで設定した文字列をWebUIの静的キューアドレスにも設定してください）
+* 1. RabbitMQで設定した仮想ホスト名に対するユーザ名（hatoholと異なるidを付与した場合）
+* 1. RabbitMQで設定したユーザ名に対するパスワード（hatoholと異なるpwを付与した場合）
 
 
