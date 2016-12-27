@@ -5,6 +5,9 @@
 	- [インストール](/docs/install/16.04/ja/) ([English](/docs/install/16.04/en/))
 	- [アップグレード](/docs/upgrade/16.04/ja/) ([English](/docs/upgrade/16.04/en/))
 
+- Hatohol Arm Plugin
+	- [インストール](/docs/install/plugins/2.1/HowToUse_ja.html) ([English](/docs/install/plugins/2.1/HowToUse.html))
+
 
 旧バージョンのドキュメント
 
