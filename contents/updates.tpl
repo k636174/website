@@ -12,7 +12,7 @@
 	<div class="tab-pane" id="2016">
 		<table class="table">
 				<tr>
-					<td>2016/12/16</td>
+					<td>2017/01/13</td>
 					<td>Hatohol version 16.12が本日リリースされました。(<a href="/docs/install/16.12/ja/">インストールドキュメント</a>)</td>
 				</tr>
 				<tr>
