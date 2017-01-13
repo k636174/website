@@ -1,7 +1,8 @@
 <h1>更新情報</h1>
 <!-- Nav tabs -->
 <ul id="yearTabs" class="nav nav-tabs">
-	<li class="active"><a href="#2016" data-toggle="tab">2016</a></li>
+	<li class="active"><a href="#2017" data-toggle="tab">2017</a></li>
+	<li><a href="#2016" data-toggle="tab">2016</a></li>
 	<li><a href="#2015" data-toggle="tab">2015</a></li>
 	<li><a href="#2014" data-toggle="tab">2014</a></li>
 	<li><a href="#2013" data-toggle="tab">2013</a></li>
@@ -9,6 +10,14 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
+	<div class="tab-pane active" id="2017">
+		<table class="table">
+				<tr>
+					<td>2017/01/13</td>
+					<td>Hatohol version 16.12が本日リリースされました。(<a href="/docs/install/16.12/ja/">インストールドキュメント</a>)</td>
+				</tr>
+		</table>
+	</div>
 	<div class="tab-pane" id="2016">
 		<table class="table">
 				<tr>
@@ -35,7 +44,7 @@
 		</table>
 	</div>
 
-	<div class="tab-pane active" id="2014">
+	<div class="tab-pane" id="2014">
 		<table class="table">
 				<tr>
 					<td>2014/12/24</td>
