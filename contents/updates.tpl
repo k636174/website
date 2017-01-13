@@ -10,7 +10,7 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
-	<div class="tab-pane" id="2017">
+	<div class="tab-pane active" id="2017">
 		<table class="table">
 				<tr>
 					<td>2017/01/13</td>
@@ -44,7 +44,7 @@
 		</table>
 	</div>
 
-	<div class="tab-pane active" id="2014">
+	<div class="tab-pane" id="2014">
 		<table class="table">
 				<tr>
 					<td>2014/12/24</td>
