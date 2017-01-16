@@ -10,15 +10,14 @@
 
 - 0.1
 	- [インストール](/docs/install/0.1/ja/) ([English](/docs/install/0.1/en/))
-	- [アップグレード](/docs/upgrade/0.1/ja/) ([English](/docs/upgrade/0.1/en/))
 - 13.12
 	- [インストール](/docs/install/13.12/ja/) ([English](/docs/install/13.12/en/))
 	- [アップグレード](/docs/upgrade/13.12/ja/) ([English](/docs/upgrade/13.12/en/))
 - 14.03
-	- [インストール](/docs/install/14.03/ja/)([English](/docs/install/14.03/en/))
+	- [インストール](/docs/install/14.03/ja/)
 	- [アップグレード](/docs/upgrade/14.03/ja/)([English](/docs/install/14.03/en/))
 - 14.06
-	- [インストール](/docs/install/14.06/ja/)([English](/docs/install/14.06/en/))
+	- [インストール](/docs/install/14.06/ja/)
 	- [アップグレード](/docs/upgrade/14.06/ja/)([English](/docs/install/14.06/en/))
 - 14.09
 	- [インストール](/docs/install/14.09/ja/)([English](/docs/install/14.09/en/))
