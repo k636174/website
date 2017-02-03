@@ -93,16 +93,16 @@ TIPS:
 - /etc/hatohol/hatohol.confファイルを以下のように修正することによっても変更可能です。hatohol.confは${prefix}/etc/hatohol/hatohol.confに配置されています。
 
 
-    [mysql]
-    - database=hatohol
-    + database=your DB name
-    - user=hatohol
-    + user=user name of MariaDB root user
-    - password=hatohol
-    + password= password of MariaDB root user
+    [mysql]  
+    - database=hatohol  
+    + database=your DB name  
+    - user=hatohol  
+    + user=user name of MariaDB root user  
+    - password=hatohol  
+    + password= password of MariaDB root user  
     
-    [FaceRest]
-    workers=4
+    [FaceRest]  
+    workers=4  
     
     ** メモ **  
     先頭の'+'印は、新たに追加する行を意味します。  
