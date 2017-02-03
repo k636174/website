@@ -71,7 +71,7 @@ Tips:
 
 - If the root password of the MariaDB server is not set, use "".
 - You can change the DB name, user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
-- You can change them to fix the hatohol.conf as the following. hatohol.conf is putted on ${prefix}/etx/hatohol/hatohol.conf.  
+- You can change them to fix the hatohol.conf as the following. hatohol.conf is putted on ${prefix}/etc/hatohol/hatohol.conf.
 
     [mysql]  
     - database=hatohol  
