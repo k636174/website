@@ -71,25 +71,23 @@ Tips:
 
 - If the root password of the MariaDB server is not set, use "".
 - You can change the DB name, user name and the password of the created DB with --hatohol-db-user and --hatohol-db-password options.
-    - You can change them to fix the hatohol.conf as the following. hatohol.conf is putted on ${prefix}/etx/hatohol/hatohol.conf.
+- You can change them to fix the hatohol.conf as the following. hatohol.conf is putted on ${prefix}/etx/hatohol/hatohol.conf.  
 
-```
-[mysql]
-- database=hatohol
-+ database=your DB name
-- user=hatohol
-+ user=user name of MariaDB root user
-- password=hatohol
-+ password= password of MariaDB root user
+    [mysql]  
+    - database=hatohol  
+    + database=your DB name  
+    - user=hatohol  
+    + user=user name of MariaDB root user  
+    - password=hatohol  
+    + password= password of MariaDB root user  
+    
+    [FaceRest]  
+    workers=4  
+    
+    ** NOTE **  
+    The mark '+' at the head means a newly added line.  
+    The mark '-' at the head means a deleted line.  
 
-[FaceRest]
-workers=4
-
-** NOTE **
-The mark '+' at the head means a newly added line.
-The mark '-' at the head means a deleted line.
-
-```
 
 - hatohol-db-initiator doesn't require command line argument after hatohol DB is created. db-name, db-user and db-password are read from hatohol.conf by default.
 
