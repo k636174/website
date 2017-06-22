@@ -23,6 +23,10 @@
 			<h2>更新情報・お知らせ</h2>
 			<table class="table">
 				<tr>
+					<td>2017/06/23</td>
+					<td>Hatohol version 17.06が本日リリースされました。(<a href="http://www.hatohol.org/docs/install/17.06/ja/">インストールドキュメント</a>)</td>
+				</tr>
+				<tr>
 					<td>2017/01/13</td>
 					<td>Hatohol version 16.12が本日リリースされました。(<a href="http://www.hatohol.org/docs/install/16.12/ja/">インストールドキュメント</a>)</td>
 				</tr>
